@@ -13,9 +13,11 @@
     position: absolute;
     top: 50%;
     left: 50%; /* à 50%/50% du parent référent */
-    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+    /* décalage de 50% de sa propre taille */
     width: 100%;
     padding: 20px;
+      transform: translate(-50%, -100%);
+  }
 
     h1 {
       background-color: rgba(95, 211, 95, 0.5);
@@ -35,11 +37,11 @@
         font-size: 30px;
       }
       @media (max-width: 550px) {
-        font-size: 20px;
+        font-size: 18px;
       }
     }
   }
-}
+
 
 section {
   h2 {
@@ -102,11 +104,14 @@ section {
 section {
   width: 90%;
   margin: 30px auto;
+  margin-bottom: 200px;
 
   .carte {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
+
+
   }
 }

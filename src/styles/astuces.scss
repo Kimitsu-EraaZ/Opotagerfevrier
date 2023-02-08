@@ -10,3 +10,15 @@ h1 {
     font-family: "Dancing Script", cursive;
     width: 100%;
 }
+section {
+    article {
+        width: 90%;
+        margin: auto;
+
+        img {
+            margin: 0;
+            object-fit: contain;
+            width: 50%;
+        }
+    }
+}

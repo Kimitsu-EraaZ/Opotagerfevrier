@@ -6,17 +6,17 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 10;
+  z-index: 100;
 
   .logo {
     max-width: 300px;
     max-height: 80px;
     padding: 10px;
+
     margin-left: 10px;
     @media (min-width: 885px) {
       margin-left: 100px;
     }
-
   }
   .menu-toogle {
     cursor: pointer;
@@ -65,7 +65,6 @@ nav {
       border-radius: 50%;
       padding: 10px;
 
-
       &:hover {
         background: rgba(0, 128, 0, 0.151);
       }
@@ -82,7 +81,6 @@ nav {
         right: 0;
         z-index: 20;
         transition: all 0.4s;
-      
       }
       .lineTop {
         top: 21px;
@@ -105,7 +103,6 @@ nav {
   .navbar {
     width: 60%;
 
-
     @media (max-width: 885px) {
       display: none;
     }
@@ -122,23 +119,22 @@ nav {
         a {
           text-decoration: none;
           color: rgb(10, 126, 81);
-  
         }
 
         img {
-          border-radius: 100%;      
+          border-radius: 100%;
           height: 40px;
           width: 40px;
-           object-fit: scale-down;
-           margin-right: 5px;
-           box-shadow: 0px 10px 13px -7px #08ad32, 5px 5px 15px -9px rgba(111, 201, 95, 0.623);
-         }
+          object-fit: scale-down;
+          margin-right: 5px;
+          box-shadow: 0px 10px 13px -7px #08ad32, 5px 5px 15px -9px rgba(111, 201, 95, 0.623);
+        }
       }
     }
   }
   .nav-overlay {
     position: absolute;
-    background: rgb(255,255,255);
+    background: rgb(255, 255, 255);
     top: 0;
     left: 0;
     width: 100%;
@@ -158,25 +154,24 @@ nav {
       padding: 30px;
       li {
         list-style-type: none;
-        &:nth-child(8){
+        &:nth-child(8) {
           display: flex;
           align-items: center;
         }
-    
+
         a {
           text-decoration: none;
           font-size: 22px;
           color: rgb(0, 0, 0);
-   
         }
-        .pic-profil{
-          border-radius: 100%;      
+        .pic-profil {
+          border-radius: 100%;
           height: 40px;
           width: 40px;
-           object-fit: scale-down;
-           margin-right: 5px;
-           box-shadow: 0px 10px 13px -7px #08ad32, 5px 5px 15px -9px rgba(111, 201, 95, 0.623);
-         }
+          object-fit: scale-down;
+          margin-right: 5px;
+          box-shadow: 0px 10px 13px -7px #08ad32, 5px 5px 15px -9px rgba(111, 201, 95, 0.623);
+        }
       }
     }
   }

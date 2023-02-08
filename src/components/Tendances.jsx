@@ -24,7 +24,7 @@ const Trends = () => {
   return (
     <div className="trending-container">
       <h4>Les posts les plus liker</h4>
-      <NavLink to="/trending">
+      <NavLink to="/Journal">
         <ul>
           {trendList.length &&
             trendList.map((post) => {
@@ -53,7 +53,7 @@ const Trends = () => {
                   </div>
                   <div className="trend-content">
                     <p>{post.message}</p>
-                    <span>Lire</span>
+                    <span>Prochainement (En lire +)</span>
                   </div>
                 </li>
               );

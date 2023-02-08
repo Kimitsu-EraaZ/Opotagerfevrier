@@ -12,14 +12,15 @@ const Connexion = () => {
   return (
     <div className="profil-page">
       {uid ? (
-    
+        <div>
+        <h1 className="static">Page profil</h1>    
         <div className="bloc-admin">
-        <h1 className="static">Page profil</h1>        
+    
        
           <UpdateProfil/>
           <Logout />
         </div>
-     
+     </div>
    
       ) : (
         <div className="log-container">

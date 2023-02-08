@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/astuces.scss"
 
+
 const Astuces = () => {
   return (
     <div className="flex">
@@ -9,7 +10,11 @@ const Astuces = () => {
       <section>
         <article>
         <div>
-          <h3>    Les bonnes combinaisons</h3>   
+     
+        
+</div>
+        <div>
+          <h3>Les bonnes combinaisons</h3>   
           {`          Les pommes de terre avec les pois, les haricots et l'ail. 
           Les fraise avec les haricots, la laitue, les épinards et l'ail
           Les endives avec le fenouil
@@ -35,7 +40,7 @@ const Astuces = () => {
           Les carottes avec la laitue, les pois, l'aneth, la ciboulette et l'ail`}
           </div>
           <div>
-          <h3>    Les mauvaises combinaisons</h3>
+          <h3>Les mauvaises combinaisons</h3>
           {`          Les pommes de terre avec les tomates, le romarin, la menthe, le thym et la camomille
           Les fraises avec les choux
           Les Choux-fleur et les épinards

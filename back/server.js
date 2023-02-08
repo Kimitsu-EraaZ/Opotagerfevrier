@@ -34,7 +34,7 @@ const postRoutes = require('./routes/post.routes.js');
 // Cors Option avec l'ensemble des paramètres de securité 
 const corsOption = {
   origin: process.env.CLIENT_URL,
-  credentials: true,
+   credentials: true,
   'allowedHeaders': ['sessionId', 'Content-Type'],
   'exposedHeaders': ['sessionId'],
   'methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
@@ -70,6 +70,7 @@ app.use('/api/post', postRoutes)
 app.get('/', (req, res) => {
   res.send('Hello World!')
   })
+
 
 // Connexion à la base de données Mongodb
 mongoose

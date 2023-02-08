@@ -4,6 +4,11 @@ const mongoose = require('mongoose');
 //Appel du middleware validator de la fonction isEmail à la place de REGEX
 const { isEmail } = require('validator');
 
+const passwordValidation = function(password) {
+  const pattern = /^(?=.*[A-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,1024}$/;
+  return pattern.test(password);
+};
+
 //Appel du middleware bcrypt
 const bcrypt = require('bcrypt');
 
@@ -33,7 +38,11 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
       max: 1024,
-      minlength: 6
+      validate: {
+        validator: passwordValidation,
+        message: "Le mot de passe doit contenir au moins 8 caractères et 1 majuscule, 1 minuscule et 1 Caractère spécial."
+
+      }
     },
     picture: {
       type: String,
