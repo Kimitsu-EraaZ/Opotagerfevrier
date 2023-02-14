@@ -15,19 +15,16 @@ const Home = () => {
     <>
       <Navbar />
       <main>
-      <div className="hero-div">
-        <img
-          src={require(`../images/${Item}.jpg`)}
-          alt="Fond"
-          className="hero"
-        />
-        <div className="titre-site">
-        <h1 >
-          Le potager "Le bonheur de manger son chez soi".
-        </h1>
+        <div className="hero-div">
+          <img
+            src={require(`../images/${Item}.jpg`)}
+            alt="Fond"
+            className="hero"
+          />
+          <div className="titre-site">
+            <h1>Le potager "Le bonheur de manger son chez soi".</h1>
+          </div>
         </div>
-                </div>
-        
 
         <section>
           <h2>Venez partager un moment de détente et de nature</h2>
@@ -37,19 +34,33 @@ const Home = () => {
               <button className="btn1"> {Item}</button>
             </a>
             <a href={`/Journal`}>
-            <button className="btn2">Voir le journal</button>
+              <button className="btn2">Voir le journal</button>
             </a>
           </div>
 
           <h3>O Potager Perso c'est quoi ?</h3>
           <p>
-            Pendant cette dure periode ou les couts de produition de vos plats
-            alimentaire industriel explosent. Apprendre a revenir à nos racines
-            et cultiver son propre potager (en jardière sur votre balcon, en
-            terre dans un coin de votre jardin ou dans une mini serre) peut
-            importe la taille pour se nourrir de manière plus écolo, plus saine
-            et plus économique. O Potager Perso c'est avant tout de l'entraide
-            pour la réalisation de votre potager personnel
+            La permaculture est une approche écologique pour la conception de
+            systèmes de production alimentaire durable. Elle considère la nature
+            comme un modèle pour concevoir des jardins, des fermes et des
+            systèmes alimentaires plus durables qui produisent des aliments
+            sains et nutritifs. La permaculture met l'accent sur les relations
+            entre les plantes, les animaux, les humains et le sol. Cela signifie
+            que toutes les formes de vie sont considérées comme des acteurs
+            importants dans la production alimentaire et que les relations entre
+            eux sont optimisées pour créer un équilibre écologique. Les aliments
+            produits en permaculture sont souvent considérés comme plus sains
+            que les aliments produits par les méthodes traditionnelles, car ils
+            sont cultivés sans produits chimiques nocifs et sont souvent plus
+            riches en nutriments. En outre, la permaculture encourage les
+            pratiques de rotation des cultures et de protection des sols pour
+            renforcer la santé du sol et de la vie microbienne, ce qui peut
+            améliorer la qualité des aliments produits. En somme, la
+            permaculture offre une alternative durable pour la production
+            alimentaire qui tient compte de la santé de la nature et des
+            personnes. Elle crée une relation symbiotique entre les éléments du
+            système alimentaire pour produire des aliments de qualité
+            supérieure.
           </p>
         </section>
 

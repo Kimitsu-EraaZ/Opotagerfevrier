@@ -16,32 +16,28 @@
     /* décalage de 50% de sa propre taille */
     width: 100%;
     padding: 20px;
-      transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
   }
 
-    h1 {
-      background-color: rgba(95, 211, 95, 0.5);
-      font-size: 40px;
-      text-align: center;
-      color: white;
-      padding: 10px;
-      font-family: "Dancing Script", cursive;
-      position: absolute;
-      top: 50%;
-      left: 50%; /* à 50%/50% du parent référent */
-      transform: translate(
-        -50%,
-        -50%
-      ); /* décalage de 50% de sa propre taille */
-      @media (max-width: 885px) {
-        font-size: 30px;
-      }
-      @media (max-width: 550px) {
-        font-size: 18px;
-      }
+  h1 {
+    background-color: rgba(95, 211, 95, 0.5);
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: "Dancing Script", cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+    @media (max-width: 885px) {
+      font-size: 30px;
+    }
+    @media (max-width: 550px) {
+      font-size: 18px;
     }
   }
-
+}
 
 section {
   h2 {
@@ -96,7 +92,7 @@ section {
     font-family: "Dancing Script", cursive;
     font-size: 30px;
     margin: 2px auto;
-    &::first-letter{
+    &::first-letter {
       text-transform: uppercase;
     }
   }
@@ -104,14 +100,12 @@ section {
 section {
   width: 90%;
   margin: 30px auto;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 
   .carte {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
-
-
   }
 }

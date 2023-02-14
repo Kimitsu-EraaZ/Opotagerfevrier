@@ -38,9 +38,13 @@
     flex-direction: column;
   }
   div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: auto;
     padding: 20px;
     width: 45%;
+
     &:nth-child(45) {
       margin-bottom: 250px;
     }
@@ -51,17 +55,20 @@
     }
 
     img {
+      margin: auto;
       width: 70%;
       text-align: center;
     }
     h4 {
       font-size: 20px;
+      text-align: center;
       margin-bottom: 10px;
       @media (max-width: 885px) {
         font-size: 28px;
       }
     }
     p {
+      text-align: center;
       font-size: 15px;
       margin-bottom: 5px;
     }
